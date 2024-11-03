@@ -3,3 +3,13 @@
 # а значение - список элементов данного типа.
 # Для списка: [1, 2, "3", "4", True, 5.5]
 # Ответ:  {int: [1, 2, 5], float: [5.5], str: ["3", "4"], bool: [True]}
+
+ls = [1, 2, "3", "4", True, 5.5]
+dict = {}
+
+for i in ls:
+    if type(i) in dict:
+        dict[type(i)].append(i)
+    else:
+        dict[type(i)] = [i]
+print(dict)

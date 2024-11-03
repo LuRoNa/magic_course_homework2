@@ -6,3 +6,10 @@
 # 2/3
 # Вывод:
 # 7/6  (будет еще круче если упростите до 1+1/6)
+
+st1 = input().split('/')
+st2 = input().split('/')
+
+num_d = int(st1[1]) * int(st2[1])
+num_u = int(st1[0]) * int(st2[1]) + int(st2[0]) * int(st1[1])
+print(str(num_u) + '/' + str(num_d))
